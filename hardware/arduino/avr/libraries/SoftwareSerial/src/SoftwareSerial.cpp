@@ -48,6 +48,7 @@ http://arduiniana.org.
 // Statics
 //
 SoftwareSerial *SoftwareSerial::active_object = 0;
+SoftwareSerial *SoftwareSerial::prev_active_object = NULL;
 uint8_t SoftwareSerial::_receive_buffer[_SS_MAX_RX_BUFF]; 
 volatile uint8_t SoftwareSerial::_receive_buffer_tail = 0;
 volatile uint8_t SoftwareSerial::_receive_buffer_head = 0;
@@ -96,12 +97,28 @@ bool SoftwareSerial::listen()
 
     _buffer_overflow = false;
     _receive_buffer_head = _receive_buffer_tail = 0;
+    prev_active_object = (active_object == NULL) ? (this) : (active_object);
     active_object = this;
 
     setRxIntMsk(true);
     return true;
   }
 
+  return false;
+}
+
+bool SoftwareSerial::restore_listener()
+{
+  if ( active_object != prev_active_object )
+  {
+    _buffer_overflow = false;
+    uint8_t oldSREG = SREG;
+    cli();
+    _receive_buffer_head = _receive_buffer_tail = 0;
+    prev_active_object->listen();
+    SREG = oldSREG;
+    return true;
+  }
   return false;
 }
 
