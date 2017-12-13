@@ -73,6 +73,7 @@ private:
   static volatile uint8_t _receive_buffer_tail;
   static volatile uint8_t _receive_buffer_head;
   static SoftwareSerial *active_object;
+  static SoftwareSerial* prev_active_object;
 
   // private methods
   inline void recv() __attribute__((__always_inline__));
@@ -105,6 +106,12 @@ public:
     \return Byte en la posicion pos_0
   */
   uint8_t operator[](const uint8_t pos_0) const;
+
+  /**
+    \brief Restaura el listener activo inmediatamente anterior
+    \return True si realmente habia un listener anterior y se ha restaurado
+  */
+  bool restore_listener();
 
   virtual size_t write(uint8_t byte);
   virtual int read();
