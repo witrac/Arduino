@@ -99,6 +99,13 @@ public:
   bool overflow() { bool ret = _buffer_overflow; if (ret) _buffer_overflow = false; return ret; }
   int peek();
 
+  /**
+    \brief Devuelve el byte correspondiente a la posicion pos_0 en el buffer de rx
+    \param pos_0 Posicion en el buffer del byte a devolver
+    \return Byte en la posicion pos_0
+  */
+  uint8_t operator[](const uint8_t pos_0) const;
+
   virtual size_t write(uint8_t byte);
   virtual int read();
   virtual int available();
