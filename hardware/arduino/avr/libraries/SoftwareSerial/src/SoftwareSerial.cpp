@@ -404,6 +404,12 @@ int SoftwareSerial::read()
   return d;
 }
 
+uint8_t SoftwareSerial::operator[](const uint8_t pos_0) const
+{
+  uint8_t pos = ( _receive_buffer_head+pos_0 )% _SS_MAX_RX_BUFF;
+  return _receive_buffer[pos];
+}
+
 int SoftwareSerial::available()
 {
   if (!isListening())
