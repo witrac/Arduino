@@ -188,9 +188,17 @@ void SoftwareSerial::recv()
     uint8_t next = (_receive_buffer_tail + 1) % _SS_MAX_RX_BUFF;
     if (next != _receive_buffer_head)
     {
-      // save new data in buffer: tail points to where byte goes
-      _receive_buffer[_receive_buffer_tail] = d; // save new byte
-      _receive_buffer_tail = next;
+      if( rx_hook != NULL )
+      {
+        // pass data directly to the hook (do not save in buffer)
+        rx_hook( obj_ptr, d );
+      }
+      else
+      {
+        // save new data in buffer: tail points to where byte goes
+        _receive_buffer[_receive_buffer_tail] = d; // save new byte
+        _receive_buffer_tail = next;
+      }
     } 
     else 
     {
@@ -269,7 +277,9 @@ SoftwareSerial::SoftwareSerial(uint8_t receivePin, uint8_t transmitPin, bool inv
   _rx_delay_stopbit(0),
   _tx_delay(0),
   _buffer_overflow(false),
-  _inverse_logic(inverse_logic)
+  _inverse_logic(inverse_logic),
+  rx_hook( NULL ),
+  obj_ptr( NULL )
 {
   setTX(transmitPin);
   setRX(receivePin);
@@ -506,4 +516,10 @@ int SoftwareSerial::peek()
 
   // Read from "head"
   return _receive_buffer[_receive_buffer_head];
+}
+
+void SoftwareSerial::config_rx_hook(void (*rx_hook_0) (void*, const uint8_t), void* obj_ptr_0)
+{
+  rx_hook = rx_hook_0;
+  obj_ptr = obj_ptr_0;
 }
