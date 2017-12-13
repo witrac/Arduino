@@ -82,6 +82,13 @@ private:
   void setRX(uint8_t receivePin);
   inline void setRxIntMsk(bool enable) __attribute__((__always_inline__));
 
+  // Rx hook
+  /**
+    \brief Hook al que se pasan los bytes de entrada sin pasar por el buffer
+  */
+  void* obj_ptr;
+  void ( *rx_hook )( void* obj_ptr, const uint8_t b );
+
   // Return num - sub, or 1 if the result would be < 1
   static uint16_t subtract_cap(uint16_t num, uint16_t sub);
 
@@ -106,6 +113,11 @@ public:
     \return Byte en la posicion pos_0
   */
   uint8_t operator[](const uint8_t pos_0) const;
+
+  /**
+    \brief Configura el objeto y la funcion hook
+  */
+  void config_rx_hook(void (*rx_hook_0) (void*, const uint8_t), void* obj_ptr_0);
 
   /**
     \brief Restaura el listener activo inmediatamente anterior
