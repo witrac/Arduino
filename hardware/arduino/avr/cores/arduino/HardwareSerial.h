@@ -124,6 +124,14 @@ class HardwareSerial : public Stream
     virtual int available(void);
     virtual int peek(void);
     virtual int read(void);
+
+    /**
+      \brief Devuelve el byte correspondiente a la posicion pos_0 en el buffer de rx
+      \param pos_0 Posicion en el buffer del byte a devolver
+      \return Byte en la posicion pos_0
+    */
+    uint8_t operator[](const uint8_t pos_0) const;
+
     virtual int availableForWrite(void);
     virtual void flush(void);
     virtual size_t write(uint8_t);
