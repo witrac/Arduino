@@ -175,6 +175,11 @@ int HardwareSerial::read(void)
   }
 }
 
+uint8_t HardwareSerial::operator[]( const uint8_t pos_0 ) const {
+  uint8_t pos = ( _rx_buffer_tail+pos_0 )% SERIAL_RX_BUFFER_SIZE;
+  return _rx_buffer[pos];
+}
+
 int HardwareSerial::availableForWrite(void)
 {
 #if (SERIAL_TX_BUFFER_SIZE>256)
