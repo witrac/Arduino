@@ -16,6 +16,10 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # Besiana Bici <besianabici@gmail.com>, 2014
 # Elio Qoshi <ping@elioqoshi.me>, 2014
 # Florian Tani <floriantani@gmail.com>, 2014
@@ -28,7 +32,7 @@ msgstr ""
 "Project-Id-Version: Arduino IDE 1.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-29 10:24-0400\n"
-"PO-Revision-Date: 2017-09-23 19:34+0000\n"
+"PO-Revision-Date: 2018-11-23 15:06+0000\n"
 "Last-Translator: Cristian Maglie <c.maglie@arduino.cc>\n"
 "Language-Team: Albanian (http://www.transifex.com/mbanzi/arduino-ide-15/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -119,6 +123,16 @@ msgstr "Nje version i ri i arduinos eshte i mundur,\ndo te deshironit te viziton
 msgid "A newer {0} package is available"
 msgstr ""
 
+#: ../../../../../arduino-core/src/cc/arduino/contributions/packages/ContributionsIndexer.java:97
+msgid ""
+"A package index has an invalid signature and needs to be updated.\n"
+"Please open the Board Manager from the menu\n"
+"\n"
+"      Tools -> Board -> Board Manager\n"
+"\n"
+"to update it"
+msgstr ""
+
 #: ../../../../../app/src/processing/app/Base.java:2307
 msgid "A subfolder of your sketchbook is not a valid library"
 msgstr ""
@@ -151,10 +165,6 @@ msgstr ""
 msgid "Afrikaans"
 msgstr ""
 
-#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:248
-msgid "Aggressively cache compiled core"
-msgstr ""
-
 #: ../../../processing/app/Preferences.java:96
 msgid "Albanian"
 msgstr "Shqip"
@@ -171,10 +181,6 @@ msgid ""
 "Do not attempt to save this sketch as it may overwrite\n"
 "the old version. Use Open to re-open the sketch and try again.\n"
 msgstr "Ndodhi një gabim gjatë enkodimit të rregullimit të dosjes.\nMos e provo ta ruash këtë skicë sepse mund të mbishkruhet\nmbi versionin e vjetër. Përdor Open për të rihapur skicën dhe provoje sërish.\n"
-
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:99
-msgid "An error occurred while updating libraries index!"
-msgstr ""
 
 #: ../../../processing/app/BaseNoGui.java:528
 msgid "An error occurred while uploading the sketch"
@@ -216,6 +222,11 @@ msgstr "Arkivo skicen si :"
 msgid "Archive sketch canceled."
 msgstr "Arkivimi i skices i anulluar"
 
+#: ../../../../../arduino-core/src/cc/arduino/Compiler.java:67
+#, java-format
+msgid "Archiving built core (caching) in: {0}"
+msgstr ""
+
 #: tools/Archiver.java:75
 msgid ""
 "Archiving the sketch has been canceled because\n"
@@ -225,14 +236,6 @@ msgstr "Arkivimi i skices eshte anulluar sepse\nskica nuk mund te ruhet sic duhe
 #: ../../../../../arduino-core/src/processing/app/I18n.java:24
 msgid "Arduino"
 msgstr ""
-
-#: ../../../processing/app/I18n.java:83
-msgid "Arduino ARM (32-bits) Boards"
-msgstr "Borde Arduino ARM (32 Bit)"
-
-#: ../../../processing/app/I18n.java:82
-msgid "Arduino AVR Boards"
-msgstr "Borde Arduino AVR"
 
 #: Editor.java:2137
 msgid ""
@@ -370,6 +373,10 @@ msgstr "Bordi {0}:{1}:{2} nuk percakton preferencen \"build.board\". Vetvendosje
 #: ../../../processing/app/EditorStatus.java:472
 msgid "Board: "
 msgstr "Bordi:"
+
+#: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:97
+msgid "Boards"
+msgstr ""
 
 #: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributionManagerUI.java:89
 msgid "Boards Manager"
@@ -622,6 +629,16 @@ msgstr "Nuk mund te fshihet versioni me i vjeter i  {0}"
 msgid "Could not replace {0}"
 msgstr "Nuk mund te zevendesohet {0}"
 
+#: ../../../../../arduino-core/src/cc/arduino/packages/DiscoveryManager.java:93
+#, java-format
+msgid "Could not start discovery '{0}': {1}"
+msgstr ""
+
+#: ../../../../../arduino-core/src/processing/app/PreferencesData.java:141
+#, java-format
+msgid "Could not write preferences file: {0}"
+msgstr ""
+
 #: tools/Archiver.java:74
 msgid "Couldn't archive sketch"
 msgstr "Nuk mund te arkivohet skica"
@@ -665,6 +682,10 @@ msgstr ""
 msgid "Data Storage"
 msgstr ""
 
+#: ../../../../../app/src/processing/app/Editor.java:1386
+msgid "Decrease Font Size"
+msgstr ""
+
 #: Editor.java:1224 Editor.java:2765
 msgid "Decrease Indent"
 msgstr "Pakeso dhembezimin"
@@ -673,9 +694,18 @@ msgstr "Pakeso dhembezimin"
 msgid "Default"
 msgstr ""
 
+#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:870
+msgid "Default theme"
+msgstr ""
+
 #: EditorHeader.java:314 Sketch.java:591
 msgid "Delete"
 msgstr "Fshi"
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:69
+#, java-format
+msgid "Dependencies for library {0}:{1}"
+msgstr ""
 
 #: ../../../../../arduino-core/src/processing/app/I18n.java:33
 msgid "Device Control"
@@ -774,10 +804,6 @@ msgstr "Hollandisht"
 msgid "Dutch (Netherlands)"
 msgstr "Hollandisht"
 
-#: ../../../../../app/src/processing/app/Editor.java:1309
-msgid "Edison Help"
-msgstr ""
-
 #: Editor.java:1130
 msgid "Edit"
 msgstr "Ndrrysho"
@@ -848,6 +874,11 @@ msgstr "Gabim duke marre folderim me te dhenat e Arduinos"
 msgid "Error inside Serial.{0}()"
 msgstr "Gabim brendra Serial.{0}()"
 
+#: ../../../../../app/src/processing/app/Theme.java:302
+#, java-format
+msgid "Error loading theme {0}: {1}"
+msgstr ""
+
 #: ../../../processing/app/debug/TargetPlatform.java:95
 #: ../../../processing/app/debug/TargetPlatform.java:106
 #: ../../../processing/app/debug/TargetPlatform.java:117
@@ -865,6 +896,25 @@ msgstr "Gabim duke hapur porten seriale \"{0}\""
 msgid ""
 "Error opening serial port ''{0}''. Try consulting the documentation at "
 "http://playground.arduino.cc/Linux/All#Permission"
+msgstr ""
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:109
+#, java-format
+msgid ""
+"Error parsing libraries index: {0}\n"
+"Try to open the Library Manager to update the libraries index."
+msgstr ""
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:112
+#, java-format
+msgid "Error reading libraries index: {0}"
+msgstr ""
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/packages/ContributionsIndexer.java:113
+#, java-format
+msgid ""
+"Error reading package indexes folder: {0}\n"
+"(maybe a permission problem?)"
 msgstr ""
 
 #: Preferences.java:277
@@ -901,6 +951,10 @@ msgstr "Gabim gjate djegjes se bootloaderit."
 msgid "Error while burning bootloader: missing '{0}' configuration parameter"
 msgstr "Gabim ndersa ndizet ngarkuesi i nisjes : mungon parametri konfigurues  '{0}"
 
+#: ../../../../../app/src/processing/app/Editor.java:2355
+msgid "Error while burning bootloader: please select a serial port."
+msgstr ""
+
 #: ../../../../../app/src/processing/app/Editor.java:1940
 msgid "Error while compiling: missing '{0}' configuration parameter"
 msgstr ""
@@ -936,10 +990,6 @@ msgstr ""
 #: Preferences.java:93
 msgid "Estonian"
 msgstr "Estonez"
-
-#: ../../../processing/app/Preferences.java:146
-msgid "Estonian (Estonia)"
-msgstr "Estonez (Estonia)"
 
 #: Editor.java:516
 msgid "Examples"
@@ -1062,10 +1112,6 @@ msgstr "Galisian"
 msgid "Galician (Spain)"
 msgstr ""
 
-#: ../../../../../app/src/processing/app/Editor.java:1288
-msgid "Galileo Help"
-msgstr ""
-
 #: ../../../processing/app/Preferences.java:94
 msgid "Georgian"
 msgstr "Gjeorgisht"
@@ -1144,9 +1190,9 @@ msgstr ""
 msgid "Ignore Case"
 msgstr "Rast injorimi"
 
-#: Base.java:1058
-msgid "Ignoring bad library name"
-msgstr "Injoro librarine me emer te keq"
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:184
+msgid "Ignoring library with bad name"
+msgstr ""
 
 #: Base.java:1436
 msgid "Ignoring sketch with bad name"
@@ -1172,6 +1218,10 @@ msgstr ""
 msgid "Incorrect IDE installation folder"
 msgstr ""
 
+#: ../../../../../app/src/processing/app/Editor.java:1378
+msgid "Increase Font Size"
+msgstr ""
+
 #: Editor.java:1216 Editor.java:2757
 msgid "Increase Indent"
 msgstr "Rrit dhembezimin"
@@ -1193,6 +1243,14 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:91
+msgid "Install '{0}' only"
+msgstr ""
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:85
+msgid "Install all"
+msgstr ""
+
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:170
 msgid "Installation completed!"
 msgstr ""
@@ -1205,9 +1263,9 @@ msgstr ""
 msgid "Installing boards..."
 msgstr ""
 
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:126
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:109
 #, java-format
-msgid "Installing library: {0}"
+msgid "Installing library: {0}:{1}"
 msgstr ""
 
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:134
@@ -1234,6 +1292,17 @@ msgstr "Librari e pavlefshme e gjendur ne {0}: {1}"
 msgid "Invalid quoting: no closing [{0}] char found."
 msgstr ""
 
+#: ../../../../../arduino-core/src/processing/app/packages/UserLibrary.java:158
+#, java-format
+msgid "Invalid version '{0}' for library in: {1}"
+msgstr ""
+
+#: ../../../../../app/src/processing/app/Base.java:316
+#: ../../../../../app/src/processing/app/Base.java:362
+#, java-format
+msgid "Invalid version {0}"
+msgstr ""
+
 #: Preferences.java:102
 msgid "Italian"
 msgstr "Italisht"
@@ -1254,6 +1323,10 @@ msgstr "Koreane"
 msgid "Latvian"
 msgstr "Letonisht"
 
+#: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:107
+msgid "Libraries"
+msgstr ""
+
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:93
 msgid "Library Manager"
 msgstr ""
@@ -1266,9 +1339,14 @@ msgstr ""
 msgid "Library can't use both 'src' and 'utility' folders. Double check {0}"
 msgstr ""
 
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:107
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:88
 #, java-format
-msgid "Library is already installed: {0} version {1}"
+msgid "Library is already installed: {0}:{1}"
+msgstr ""
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:148
+#, java-format
+msgid "Library {0} is already installed in: {1}"
 msgstr ""
 
 #: ../../../../../app/src/cc/arduino/view/GoToLineNumber.java:70
@@ -1319,6 +1397,14 @@ msgstr ""
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:186
 msgid "More"
+msgstr ""
+
+#: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributedPlatformTableCellJPanel.java:71
+msgid "More Info"
+msgstr ""
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/ContributedLibraryTableCellJPanel.java:38
+msgid "More info"
 msgstr ""
 
 #: Preferences.java:449
@@ -1422,6 +1508,10 @@ msgstr "Asnje linje mbyllese"
 msgid "No parameters"
 msgstr ""
 
+#: ../../../../../app/src/processing/app/Base.java:1721
+msgid "No programmers available for this board"
+msgstr ""
+
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:453
 msgid "No proxy"
 msgstr ""
@@ -1429,6 +1519,10 @@ msgstr ""
 #: Base.java:541
 msgid "No really, time for some fresh air for you."
 msgstr "Jo seriozisht , koha per pak ajer te fresket per ju"
+
+#: ../../../../../arduino-core/src/cc/arduino/packages/DiscoveryManager.java:78
+msgid "No recipes defined for discovery '{0}'"
+msgstr ""
 
 #: Editor.java:1872
 #, java-format
@@ -1461,11 +1555,11 @@ msgstr ""
 msgid "Norwegian Bokmål"
 msgstr "Norvegjisht"
 
-#: ../../../processing/app/Sketch.java:1656
+#: ../../../../../arduino-core/src/cc/arduino/Compiler.java:105
 msgid ""
-"Not enough memory; see http://www.arduino.cc/en/Guide/Troubleshooting#size "
-"for tips on reducing your footprint."
-msgstr "Nuk ka memorie te mjaftueshme; shiko  http://www.arduino.cc/en/Guide/Troubleshooting#size ne reduktimin e gjurmes tuaj"
+"Not enough memory; see https://support.arduino.cc/hc/en-us/"
+"articles/360013825179 for tips on reducing your footprint."
+msgstr ""
 
 #: Preferences.java:80 Sketch.java:585 Sketch.java:737 Sketch.java:1042
 #: Editor.java:2145 Editor.java:2465
@@ -1475,6 +1569,10 @@ msgstr "Ne rregull"
 #: Sketch.java:992 Editor.java:376
 msgid "One file added to the sketch."
 msgstr "Nje skedar u shtua tek skica"
+
+#: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributedPlatformTableCellJPanel.java:72
+msgid "Online Help"
+msgstr ""
 
 #: ../../../processing/app/BaseNoGui.java:455
 msgid "Only --verify, --upload or --get-pref are supported"
@@ -1639,11 +1737,11 @@ msgstr ""
 msgid "Problem getting data folder"
 msgstr "Problem gjate marrjes te dhenave nga folderi"
 
-#: debug/Uploader.java:209
+#: ../../../../../arduino-core/src/cc/arduino/packages/Uploader.java:179
 msgid ""
-"Problem uploading to board.  See "
-"http://www.arduino.cc/en/Guide/Troubleshooting#upload for suggestions."
-msgstr "Problem gjate ngarkimit ne bord. Shiko http://www.arduino.cc/en/Guide/Troubleshooting#upload  per sugjerime"
+"Problem uploading to board.  See https://support.arduino.cc/hc/en-us/"
+"sections/360003198300 for suggestions."
+msgstr ""
 
 #: Sketch.java:355 Sketch.java:362 Sketch.java:373
 msgid "Problem with rename"
@@ -1686,9 +1784,9 @@ msgstr "Reference"
 msgid "Remove"
 msgstr ""
 
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:157
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:142
 #, java-format
-msgid "Removing library: {0}"
+msgid "Removing library: {0}:{1}"
 msgstr ""
 
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:266
@@ -1723,6 +1821,10 @@ msgstr "Zevendesoje me:"
 
 #: ../../../../../arduino-core/src/processing/app/I18n.java:28
 msgid "Retired"
+msgstr ""
+
+#: ../../../../../app/src/processing/app/Editor.java:1973
+msgid "Retry the upload with another serial port?"
 msgstr ""
 
 #: Preferences.java:113
@@ -1772,6 +1874,10 @@ msgstr ""
 #: Editor.java:2270 Editor.java:2308
 msgid "Saving..."
 msgstr "Duke ruajtur..."
+
+#: ../../../../../app/src/cc/arduino/contributions/ui/InstallerJDialog.java:136
+msgid "Search Filter"
+msgstr ""
 
 #: ../../../processing/app/FindReplace.java:131
 msgid "Search all Sketch Tabs"
@@ -1848,12 +1954,15 @@ msgid ""
 " Serial Port menu?"
 msgstr "Porta seriale \"{0}\" nuk gjindet. A e selektuat ate qe duhet ne te djathten tek Mjetet > Menuja e portave seriale?"
 
-#: Editor.java:2343
+#: ../../../../../app/src/processing/app/Editor.java:1969
+#: ../../../../../app/src/processing/app/Editor.java:2040
+msgid "Serial port not selected."
+msgstr ""
+
+#: ../../../../../app/src/processing/app/Editor.java:1971
 #, java-format
-msgid ""
-"Serial port {0} not found.\n"
-"Retry the upload with another serial port?"
-msgstr "Porta seriale {0} nuk u gjet.\nProvoni serish ngarkimin me nje porte tjeter seriale."
+msgid "Serial port {0} not found."
+msgstr ""
 
 #: ../../../../../app/src/processing/app/Editor.java:65
 msgid "Serial ports"
@@ -1875,6 +1984,10 @@ msgstr "Probleme me ceshtjet"
 #: Editor.java:641
 msgid "Show Sketch Folder"
 msgstr "Shfaq folderin e skices"
+
+#: ../../../../../app/src/processing/app/AbstractTextMonitor.java:101
+msgid "Show timestamp"
+msgstr ""
 
 #: Preferences.java:387
 msgid "Show verbose output during: "
@@ -1908,11 +2021,11 @@ msgstr "Skica eshte e pa titulluar"
 msgid "Sketch is read-only"
 msgstr "Skica eshte vetem per lexim"
 
-#: Sketch.java:1653
+#: ../../../../../arduino-core/src/cc/arduino/Compiler.java:104
 msgid ""
-"Sketch too big; see http://www.arduino.cc/en/Guide/Troubleshooting#size for "
-"tips on reducing it."
-msgstr "Skica shume e madhe; shiko  http://www.arduino.cc/en/Guide/Troubleshooting#size ose keshilla per ta reduktuar ate."
+"Sketch too big; see https://support.arduino.cc/hc/en-us/"
+"articles/360013825179 for tips on reducing it."
+msgstr ""
 
 #: ../../../processing/app/Sketch.java:1639
 #, java-format
@@ -2047,6 +2160,14 @@ msgid ""
 "Create this folder, move the file, and continue?"
 msgstr "Skedari \"{0}\" duhet te jete brenda\nnje skice skedari te quajtur \"{1}\".\nKrijo kete skedar, zhvendose skedarin, dhe vazhdo?"
 
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:180
+#, java-format
+msgid ""
+"The library \"{0}\" cannot be used.\n"
+"Library folder names must start with a letter or number, followed by letters,\n"
+"numbers, dashes, dots and underscores. Maximum length is 63 characters."
+msgstr ""
+
 #: Base.java:1054 Base.java:2674
 #, java-format
 msgid ""
@@ -2054,6 +2175,13 @@ msgid ""
 "Library names must contain only basic letters and numbers.\n"
 "(ASCII only and no spaces, and it cannot start with a number)"
 msgstr "Libraria \"{0}\" nuk mund te perdoret.\nEmrat e librarive duhet te kene vetem shkronja dhe numra normal.\n(Vetem ASCI dhe jo hapesira, dhe nuk mund te filloje me nje numer)"
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:115
+#, java-format
+msgid ""
+"The library {0} needs some other library<br />dependencies currently not "
+"installed:"
+msgstr ""
 
 #: ../../../../../app/src/processing/app/SketchController.java:170
 msgid "The main file cannot use an extension"
@@ -2092,12 +2220,12 @@ msgid ""
 "but anything besides the code will be lost."
 msgstr "Dosja e skices eshte zhdukur.\nDoni qe te provoni ta ruani perseri ne te njejtin vend,\npor cdo gje tjeter pervec kodit do te humbasi."
 
-#: ../../../processing/app/Sketch.java:2028
+#: ../../../../../app/src/processing/app/SketchController.java:849
 msgid ""
-"The sketch name had to be modified. Sketch names can only consist\n"
-"of ASCII characters and numbers (but cannot start with a number).\n"
-"They should also be less than 64 characters long."
-msgstr "Emri i skices duhet qe te modifikohet. Emrat e skicave konsistojne vetem \nnga karaktere ASCII dhe numra (por nuk mund te fillojne me nje numer.)\nAto duhet te jene me te shkurtra se 64 karaktere."
+"The sketch name had to be modified.\n"
+"Sketch names must start with a letter or number, followed by letters,\n"
+"numbers, dashes, dots and underscores. Maximum length is 63 characters."
+msgstr ""
 
 #: Base.java:259
 msgid ""
@@ -2112,6 +2240,10 @@ msgstr "Skedari i sketchbook nuk egziston me.\nArduino do te kaloje ne vendodhje
 msgid ""
 "The specified sketchbook folder contains your copy of the IDE.\n"
 "Please choose a different folder for your sketchbook."
+msgstr ""
+
+#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:311
+msgid "Theme: "
 msgstr ""
 
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:257
@@ -2247,10 +2379,6 @@ msgstr ""
 msgid "Update"
 msgstr "Perditeso"
 
-#: Preferences.java:428
-msgid "Update sketch files to new extension on save (.pde -> .ino)"
-msgstr "Perditeso dosjet e skices ne formatin e ri dhe ruaj (.pde -->.ino)"
-
 #: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:88
 #, java-format
 msgid "Updates available for some of your {0}boards{1}"
@@ -2301,6 +2429,10 @@ msgstr "Duke ngarkuar..."
 #: Editor.java:1269
 msgid "Use Selection For Find"
 msgstr "Perdor selektimin per te gjetur"
+
+#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:285
+msgid "Use accessibility features"
+msgstr ""
 
 #: Preferences.java:409
 msgid "Use external editor"
@@ -2442,6 +2574,10 @@ msgstr "Wire.receive() eshte ri emertuar me Wire.read()."
 #: debug/Compiler.java:438
 msgid "Wire.send() has been renamed Wire.write()."
 msgstr "Wire.send() eshte riemeruar Wire.write()."
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:128
+msgid "Would you like to install also all the missing dependencies?"
+msgstr ""
 
 #: FindReplace.java:105
 msgid "Wrap Around"
@@ -2585,18 +2721,6 @@ msgstr "kompilim"
 msgid "connected!"
 msgstr "lidhur!"
 
-#: ../../../../../app/src/processing/app/Editor.java:1352
-msgid "http://www.arduino.cc/"
-msgstr ""
-
-#: UpdateCheck.java:118
-msgid "http://www.arduino.cc/en/Main/Software"
-msgstr "http://www.arduino.cc/en/Main/Software"
-
-#: UpdateCheck.java:53
-msgid "http://www.arduino.cc/latest.txt"
-msgstr "http://www.arduino.cc/latest.txt"
-
 #: Preferences.java:625
 #, java-format
 msgid "ignoring invalid font size {0}"
@@ -2605,6 +2729,12 @@ msgstr "Injoro madhesine e pavlefshme te tipit te shkrimit {0}"
 #: Editor.java:936 Editor.java:943
 msgid "name is null"
 msgstr "emri eshte bosh"
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:217
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:227
+#, java-format
+msgid "no headers files (.h) found in {0}"
+msgstr ""
 
 #: Editor.java:932
 msgid "serialMenu is null"
@@ -2633,12 +2763,6 @@ msgstr ""
 #: ../../../../../app/src/processing/app/Editor.java:2243
 #, java-format
 msgid "{0} - {1} | Arduino {2}"
-msgstr ""
-
-#: ../../../cc/arduino/contributions/SignatureVerificationFailedException.java:39
-#: ../../../cc/arduino/contributions/SignatureVerificationFailedException.java:43
-#, java-format
-msgid "{0} file signature verification failed"
 msgstr ""
 
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:310
@@ -2693,11 +2817,6 @@ msgid ""
 "\"package:arch:board:options\""
 msgstr "{0}: Emer bordi i pavlefshem, duhet te jete i formes \"package:arch:board\" ose \"package:arch:board:options\""
 
-#: ../../../processing/app/Base.java:509
-#, java-format
-msgid "{0}: Invalid option for \"{1}\" option for board \"{2}\""
-msgstr "{0}: Opsion i pavlefshem per \"{1}\" opsion per bord \"{2}\""
-
 #: ../../../processing/app/Base.java:507
 #, java-format
 msgid "{0}: Invalid option for board \"{1}\""
@@ -2707,6 +2826,11 @@ msgstr "{0}: Opsion invalid per bordin \"{1}\""
 #, java-format
 msgid "{0}: Invalid option, should be of the form \"name=value\""
 msgstr "{0}: Opsion invalid, duhet te jete ne formen \"name=value\""
+
+#: ../../../../../arduino-core/src/processing/app/helpers/CommandlineParser.java:268
+#, java-format
+msgid "{0}: Invalid value for option \"{1}\" for board \"{2}\""
+msgstr ""
 
 #: ../../../processing/app/Base.java:486
 #, java-format

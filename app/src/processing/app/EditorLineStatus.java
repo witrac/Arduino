@@ -51,8 +51,7 @@ public class EditorLineStatus extends JComponent {
 
   String text = "";
   String name = "";
-  String serialport = "";
-  String serialnumber = "";
+  String port = "";
 
   public EditorLineStatus() {
     background = Theme.getColor("linestatus.bgcolor");
@@ -92,13 +91,8 @@ public class EditorLineStatus extends JComponent {
 
   public void paintComponent(Graphics graphics) {
     Graphics2D g = Theme.setupGraphics2D(graphics);
-    if (name.isEmpty() && serialport.isEmpty()) {
-      PreferencesMap boardPreferences = BaseNoGui.getBoardPreferences();
-      if (boardPreferences != null)
-        setBoardName(boardPreferences.get("name"));
-      else
-        setBoardName("-");
-      setSerialPort(PreferencesData.get("serial.port"));
+    if (name.isEmpty() && port.isEmpty()) {
+      updateBoardAndPort();
     }
     g.setColor(background);
     Dimension size = getSize();
@@ -110,11 +104,17 @@ public class EditorLineStatus extends JComponent {
     g.drawString(text, scale(6), baseline);
 
     g.setColor(messageForeground);
-    String tmp = I18n.format(tr("{0} on {1}"), name, serialport);
-    
-    Rectangle2D bounds = g.getFontMetrics().getStringBounds(tmp, null);
-    
-    g.drawString(tmp, size.width - (int) bounds.getWidth() - RESIZE_IMAGE_SIZE,
+
+    String statusText;
+    if (port != null && !port.isEmpty()) {
+      statusText = I18n.format(tr("{0} on {1}"), name, port);
+    } else {
+      statusText = name;
+    }
+
+    Rectangle2D bounds = g.getFontMetrics().getStringBounds(statusText, null);
+
+    g.drawString(statusText, size.width - (int) bounds.getWidth() - RESIZE_IMAGE_SIZE,
                  baseline);
 
     if (OSUtils.isMacOS()) {
@@ -126,12 +126,8 @@ public class EditorLineStatus extends JComponent {
     this.name = name;
   }
 
-  public void setSerialPort(String serialport) {
-    this.serialport = serialport;
-  }
-
-  public void setSerialNumber(String serialnumber) {
-    this.serialnumber = serialnumber;
+  public void setPort(String port) {
+    this.port = port;
   }
 
   public Dimension getPreferredSize() {
@@ -144,5 +140,14 @@ public class EditorLineStatus extends JComponent {
 
   public Dimension getMaximumSize() {
     return scale(new Dimension(3000, height));
+  }
+
+  public void updateBoardAndPort() {
+    PreferencesMap boardPreferences = BaseNoGui.getBoardPreferences();
+    if (boardPreferences != null)
+      setBoardName(boardPreferences.get("name"));
+    else
+      setBoardName("-");
+    setPort(PreferencesData.get("serial.port"));
   }
 }

@@ -16,14 +16,19 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # debconf <prach.by@gmail.com>, 2013-2014,2016-2017
+# Viktar Vauchkevich, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Arduino IDE 1.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-29 10:24-0400\n"
-"PO-Revision-Date: 2017-09-23 18:51+0000\n"
-"Last-Translator: Cristian Maglie <c.maglie@arduino.cc>\n"
+"PO-Revision-Date: 2019-07-10 06:49+0000\n"
+"Last-Translator: Viktar Vauchkevich\n"
 "Language-Team: Belarusian (http://www.transifex.com/mbanzi/arduino-ide-15/language/be/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,7 +73,7 @@ msgstr "(рэдагаваць толькі калі Arduino не запушча�
 
 #: ../../../../../arduino-core/src/cc/arduino/Compiler.java:67
 msgid "(legacy)"
-msgstr ""
+msgstr "(застарэлы)"
 
 #: ../../../processing/app/helpers/CommandlineParser.java:149
 msgid "--curdir no longer supported"
@@ -113,6 +118,16 @@ msgstr "Даступная новая версія Arduino,\nжадаеце на
 msgid "A newer {0} package is available"
 msgstr "Даступны навейшы пакет {0}"
 
+#: ../../../../../arduino-core/src/cc/arduino/contributions/packages/ContributionsIndexer.java:97
+msgid ""
+"A package index has an invalid signature and needs to be updated.\n"
+"Please open the Board Manager from the menu\n"
+"\n"
+"      Tools -> Board -> Board Manager\n"
+"\n"
+"to update it"
+msgstr ""
+
 #: ../../../../../app/src/processing/app/Base.java:2307
 msgid "A subfolder of your sketchbook is not a valid library"
 msgstr ""
@@ -135,19 +150,15 @@ msgstr "Дадаць Файл"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/AdditionalBoardsManagerURLTextArea.java:73
 msgid "Additional Boards Manager URLs"
-msgstr ""
+msgstr "Дадатковыя URL'ы Кіраўніка платамі"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:268
 msgid "Additional Boards Manager URLs: "
-msgstr ""
+msgstr "Дадатковыя URL'ы Кіраўніка платамі:"
 
 #: ../../../../../app/src/processing/app/Preferences.java:161
 msgid "Afrikaans"
 msgstr "Афрыкаанс"
-
-#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:248
-msgid "Aggressively cache compiled core"
-msgstr ""
 
 #: ../../../processing/app/Preferences.java:96
 msgid "Albanian"
@@ -165,10 +176,6 @@ msgid ""
 "Do not attempt to save this sketch as it may overwrite\n"
 "the old version. Use Open to re-open the sketch and try again.\n"
 msgstr "Здарылася памылка падчас спробы змяніць кадзіроўку файла.\nНе спрабуйце захаваць гэты скетч, бо ён можа перапісаць\nстарую версію. Паўторна адчыніце скетч і паспрабуйце наноў.\n"
-
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:99
-msgid "An error occurred while updating libraries index!"
-msgstr "Адбылася памылка пры абнаўленні індэкса бібліятэк!"
 
 #: ../../../processing/app/BaseNoGui.java:528
 msgid "An error occurred while uploading the sketch"
@@ -210,6 +217,11 @@ msgstr "Архіваваць скетч як:"
 msgid "Archive sketch canceled."
 msgstr "Архіваванне скетчу адменена."
 
+#: ../../../../../arduino-core/src/cc/arduino/Compiler.java:67
+#, java-format
+msgid "Archiving built core (caching) in: {0}"
+msgstr ""
+
 #: tools/Archiver.java:75
 msgid ""
 "Archiving the sketch has been canceled because\n"
@@ -218,15 +230,7 @@ msgstr "Архіваванне скетчу было скасавана, бо с
 
 #: ../../../../../arduino-core/src/processing/app/I18n.java:24
 msgid "Arduino"
-msgstr ""
-
-#: ../../../processing/app/I18n.java:83
-msgid "Arduino ARM (32-bits) Boards"
-msgstr "Платы Arduino ARM (32-біт)"
-
-#: ../../../processing/app/I18n.java:82
-msgid "Arduino AVR Boards"
-msgstr "Платы Arduino AVR"
+msgstr "Arduino"
 
 #: Editor.java:2137
 msgid ""
@@ -303,7 +307,7 @@ msgstr "Аўтафармат скончаны"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:457
 msgid "Auto-detect proxy settings"
-msgstr ""
+msgstr "Аўтаматычна вызначаць налады проксі"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:264
 msgid "Automatic"
@@ -311,7 +315,7 @@ msgstr "Аўтаматычна"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:474
 msgid "Automatic proxy configuration URL:"
-msgstr ""
+msgstr "URL аўтаматычнай канфігурацыі проксі:"
 
 #: SerialMonitor.java:110
 msgid "Autoscroll"
@@ -365,17 +369,21 @@ msgstr "Плата {0}:{1}:{2} не вызначае перавагі ''build.bo
 msgid "Board: "
 msgstr "Плата:"
 
+#: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:97
+msgid "Boards"
+msgstr ""
+
 #: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributionManagerUI.java:89
 msgid "Boards Manager"
-msgstr ""
+msgstr "Кіраўнік платамі"
 
 #: ../../../../../app/src/processing/app/Base.java:1320
 msgid "Boards Manager..."
-msgstr ""
+msgstr "Кіраўнік платамі…"
 
 #: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributedPlatformTableCell.java:328
 msgid "Boards included in this package:"
-msgstr ""
+msgstr "Дошкі, уключаныя ў гэты пакет:"
 
 #: ../../../processing/app/debug/Compiler.java:1273
 #, java-format
@@ -477,11 +485,11 @@ msgstr "Кітайская (Тайвань) (Big5)"
 
 #: ../../../../../app/src/processing/app/AbstractTextMonitor.java:80
 msgid "Clear output"
-msgstr ""
+msgstr "Ачысціць вывад"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/AdditionalBoardsManagerURLTextArea.java:98
 msgid "Click for a list of unofficial boards support URLs"
-msgstr ""
+msgstr "Націсніце, каб атрымаць спіс неафіцыйных URL падтрымкі плат"
 
 #: Editor.java:521 Editor.java:2024
 msgid "Close"
@@ -493,7 +501,7 @@ msgstr "Закаментаваць/Раскаментаваць"
 
 #: ../../../../../arduino-core/src/processing/app/I18n.java:30
 msgid "Communication"
-msgstr ""
+msgstr "Камунікацыя"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:266
 msgid "Compiler warnings: "
@@ -616,6 +624,16 @@ msgstr "Немагчыма выдаліць старую весію {0}"
 msgid "Could not replace {0}"
 msgstr "Немагчыма замяніць {0}"
 
+#: ../../../../../arduino-core/src/cc/arduino/packages/DiscoveryManager.java:93
+#, java-format
+msgid "Could not start discovery '{0}': {1}"
+msgstr ""
+
+#: ../../../../../arduino-core/src/processing/app/PreferencesData.java:141
+#, java-format
+msgid "Could not write preferences file: {0}"
+msgstr ""
+
 #: tools/Archiver.java:74
 msgid "Couldn't archive sketch"
 msgstr "Немагчыма архіваваць скетч"
@@ -659,17 +677,30 @@ msgstr "Апрацоўка Даных"
 msgid "Data Storage"
 msgstr "Сховішча Даных"
 
+#: ../../../../../app/src/processing/app/Editor.java:1386
+msgid "Decrease Font Size"
+msgstr ""
+
 #: Editor.java:1224 Editor.java:2765
 msgid "Decrease Indent"
 msgstr "Паменьшыць водступ"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:185
 msgid "Default"
-msgstr ""
+msgstr "Агаданыя"
+
+#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:870
+msgid "Default theme"
+msgstr "Агаданая тэма"
 
 #: EditorHeader.java:314 Sketch.java:591
 msgid "Delete"
 msgstr "Выдаліць"
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:69
+#, java-format
+msgid "Dependencies for library {0}:{1}"
+msgstr ""
 
 #: ../../../../../arduino-core/src/processing/app/I18n.java:33
 msgid "Device Control"
@@ -768,10 +799,6 @@ msgstr "Галандская"
 msgid "Dutch (Netherlands)"
 msgstr "Дацкая (Нідэрланды)"
 
-#: ../../../../../app/src/processing/app/Editor.java:1309
-msgid "Edison Help"
-msgstr ""
-
 #: Editor.java:1130
 msgid "Edit"
 msgstr "Рэдагаваць"
@@ -842,6 +869,11 @@ msgstr ""
 msgid "Error inside Serial.{0}()"
 msgstr "Памылка унутры Serial.{0}()"
 
+#: ../../../../../app/src/processing/app/Theme.java:302
+#, java-format
+msgid "Error loading theme {0}: {1}"
+msgstr ""
+
 #: ../../../processing/app/debug/TargetPlatform.java:95
 #: ../../../processing/app/debug/TargetPlatform.java:106
 #: ../../../processing/app/debug/TargetPlatform.java:117
@@ -859,7 +891,26 @@ msgstr "Памылка адчынення паслядоўнага порту ''
 msgid ""
 "Error opening serial port ''{0}''. Try consulting the documentation at "
 "http://playground.arduino.cc/Linux/All#Permission"
-msgstr "Памылка адчынення паслядоўнага порту ''{0}''. Азнаёмцеся з дакументацыяй наhttp://playground.arduino.cc/Linux/All#Permission"
+msgstr "Памылка адкрыцця паслядоўнага порту ''{0}''. Азнаёмцеся з дакументацыяй на http://playground.arduino.cc/Linux/All#Permission"
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:109
+#, java-format
+msgid ""
+"Error parsing libraries index: {0}\n"
+"Try to open the Library Manager to update the libraries index."
+msgstr "Памылка разбору індэксу бібліятэк: {0}\nПаспрабуйце адкрыць Кіраўніка бібліятэк, каб абнавіць індэкс бібліятэк."
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:112
+#, java-format
+msgid "Error reading libraries index: {0}"
+msgstr ""
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/packages/ContributionsIndexer.java:113
+#, java-format
+msgid ""
+"Error reading package indexes folder: {0}\n"
+"(maybe a permission problem?)"
+msgstr ""
 
 #: Preferences.java:277
 msgid "Error reading preferences"
@@ -894,6 +945,10 @@ msgstr "Памылка падчас прашывання загрузчыка."
 #: ../../../processing/app/Editor.java:2555
 msgid "Error while burning bootloader: missing '{0}' configuration parameter"
 msgstr "Памылка падчас прашывання загрузчыка: бракуе '{0}' канфігурацыйнага параметра"
+
+#: ../../../../../app/src/processing/app/Editor.java:2355
+msgid "Error while burning bootloader: please select a serial port."
+msgstr ""
 
 #: ../../../../../app/src/processing/app/Editor.java:1940
 msgid "Error while compiling: missing '{0}' configuration parameter"
@@ -930,10 +985,6 @@ msgstr "Памылка праверкі/выгрузкі"
 #: Preferences.java:93
 msgid "Estonian"
 msgstr "Эстонская"
-
-#: ../../../processing/app/Preferences.java:146
-msgid "Estonian (Estonia)"
-msgstr "Эстонская (Эстонія)"
 
 #: Editor.java:516
 msgid "Examples"
@@ -1056,10 +1107,6 @@ msgstr "Галіцкая"
 msgid "Galician (Spain)"
 msgstr "Галіцкая (Гішпанія)"
 
-#: ../../../../../app/src/processing/app/Editor.java:1288
-msgid "Galileo Help"
-msgstr ""
-
 #: ../../../processing/app/Preferences.java:94
 msgid "Georgian"
 msgstr "Грузінская"
@@ -1070,7 +1117,7 @@ msgstr "Нямецкая"
 
 #: ../../../../../app//src/processing/app/Editor.java:817
 msgid "Get Board Info"
-msgstr ""
+msgstr "Атрымаць звесткі аб плаце"
 
 #: Editor.java:1054
 msgid "Getting Started"
@@ -1114,7 +1161,7 @@ msgstr "Хіндзі"
 
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:489
 msgid "Host name:"
-msgstr ""
+msgstr "Назва вузла:"
 
 #: Sketch.java:295
 msgid ""
@@ -1138,9 +1185,9 @@ msgstr "НЕСУМЯШЧАЛЬНА"
 msgid "Ignore Case"
 msgstr "Ігнараваць рэгістр"
 
-#: Base.java:1058
-msgid "Ignoring bad library name"
-msgstr "Ігнарую бібліятэку з кепскім імём"
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:184
+msgid "Ignoring library with bad name"
+msgstr "Ігнарую бібліятэку з кепскай назвай"
 
 #: Base.java:1436
 msgid "Ignoring sketch with bad name"
@@ -1166,6 +1213,10 @@ msgstr ""
 msgid "Incorrect IDE installation folder"
 msgstr ""
 
+#: ../../../../../app/src/processing/app/Editor.java:1378
+msgid "Increase Font Size"
+msgstr ""
+
 #: Editor.java:1216 Editor.java:2757
 msgid "Increase Indent"
 msgstr "Павяліцыць водступ"
@@ -1187,6 +1238,14 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:91
+msgid "Install '{0}' only"
+msgstr ""
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:85
+msgid "Install all"
+msgstr ""
+
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:170
 msgid "Installation completed!"
 msgstr ""
@@ -1197,11 +1256,11 @@ msgstr ""
 
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:154
 msgid "Installing boards..."
-msgstr ""
+msgstr "Усталёўка плат…"
 
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:126
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:109
 #, java-format
-msgid "Installing library: {0}"
+msgid "Installing library: {0}:{1}"
 msgstr ""
 
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:134
@@ -1228,6 +1287,17 @@ msgstr "Кепская бібліятэка знойдзена ў {0}: {1}"
 msgid "Invalid quoting: no closing [{0}] char found."
 msgstr ""
 
+#: ../../../../../arduino-core/src/processing/app/packages/UserLibrary.java:158
+#, java-format
+msgid "Invalid version '{0}' for library in: {1}"
+msgstr ""
+
+#: ../../../../../app/src/processing/app/Base.java:316
+#: ../../../../../app/src/processing/app/Base.java:362
+#, java-format
+msgid "Invalid version {0}"
+msgstr ""
+
 #: Preferences.java:102
 msgid "Italian"
 msgstr "Італьянская"
@@ -1248,9 +1318,13 @@ msgstr "Карэйская"
 msgid "Latvian"
 msgstr "Латвіская"
 
+#: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:107
+msgid "Libraries"
+msgstr ""
+
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:93
 msgid "Library Manager"
-msgstr ""
+msgstr "Кіраўнік бібліятэкамі"
 
 #: ../../../../../app/src/processing/app/Base.java:2349
 msgid "Library added to your libraries. Check \"Include library\" menu"
@@ -1260,9 +1334,14 @@ msgstr ""
 msgid "Library can't use both 'src' and 'utility' folders. Double check {0}"
 msgstr ""
 
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:107
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:88
 #, java-format
-msgid "Library is already installed: {0} version {1}"
+msgid "Library is already installed: {0}:{1}"
+msgstr ""
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:148
+#, java-format
+msgid "Library {0} is already installed in: {1}"
 msgstr ""
 
 #: ../../../../../app/src/cc/arduino/view/GoToLineNumber.java:70
@@ -1314,6 +1393,14 @@ msgstr "Рэжым не падтрымліваецца"
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:186
 msgid "More"
 msgstr "Больш"
+
+#: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributedPlatformTableCellJPanel.java:71
+msgid "More Info"
+msgstr ""
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/ContributedLibraryTableCellJPanel.java:38
+msgid "More info"
+msgstr ""
 
 #: Preferences.java:449
 msgid "More preferences can be edited directly in the file"
@@ -1416,6 +1503,10 @@ msgstr "Няма канца радка"
 msgid "No parameters"
 msgstr "Няма параметраў"
 
+#: ../../../../../app/src/processing/app/Base.java:1721
+msgid "No programmers available for this board"
+msgstr ""
+
 #: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:453
 msgid "No proxy"
 msgstr "Без проксі"
@@ -1423,6 +1514,10 @@ msgstr "Без проксі"
 #: Base.java:541
 msgid "No really, time for some fresh air for you."
 msgstr "Сапраўды, вам патрэбна свежае паветра."
+
+#: ../../../../../arduino-core/src/cc/arduino/packages/DiscoveryManager.java:78
+msgid "No recipes defined for discovery '{0}'"
+msgstr ""
 
 #: Editor.java:1872
 #, java-format
@@ -1455,11 +1550,11 @@ msgstr ""
 msgid "Norwegian Bokmål"
 msgstr "Нарвежскі Букмал"
 
-#: ../../../processing/app/Sketch.java:1656
+#: ../../../../../arduino-core/src/cc/arduino/Compiler.java:105
 msgid ""
-"Not enough memory; see http://www.arduino.cc/en/Guide/Troubleshooting#size "
-"for tips on reducing your footprint."
-msgstr "Не хапае памяці; глядзі http://www.arduino.cc/en/Guide/Troubleshooting#size для парадаў"
+"Not enough memory; see https://support.arduino.cc/hc/en-us/"
+"articles/360013825179 for tips on reducing your footprint."
+msgstr ""
 
 #: Preferences.java:80 Sketch.java:585 Sketch.java:737 Sketch.java:1042
 #: Editor.java:2145 Editor.java:2465
@@ -1469,6 +1564,10 @@ msgstr "OK"
 #: Sketch.java:992 Editor.java:376
 msgid "One file added to the sketch."
 msgstr "Да скетча даданы адзін файл."
+
+#: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributedPlatformTableCellJPanel.java:72
+msgid "Online Help"
+msgstr ""
 
 #: ../../../processing/app/BaseNoGui.java:455
 msgid "Only --verify, --upload or --get-pref are supported"
@@ -1480,7 +1579,7 @@ msgstr "Адчыніць"
 
 #: ../../../../../app/src/processing/app/Editor.java:625
 msgid "Open Recent"
-msgstr ""
+msgstr "Адкрыць нядаўняе"
 
 #: Editor.java:2688
 msgid "Open URL"
@@ -1554,7 +1653,7 @@ msgstr "Калі ласка выберыце праграматар з меню 
 
 #: ../../../../../app/src/processing/app/Editor.java:2613
 msgid "Plotter not available while serial monitor is open"
-msgstr ""
+msgstr "Плотар недаступны, калі адкрыты serial-манітор"
 
 #: Preferences.java:110
 msgid "Polish"
@@ -1586,7 +1685,7 @@ msgstr "Наладкі"
 
 #: ../../../../../app/src/processing/app/Base.java:297
 msgid "Preparing boards..."
-msgstr ""
+msgstr "Падрыхтоўка плат…"
 
 #: FindReplace.java:123 FindReplace.java:128
 msgid "Previous"
@@ -1633,11 +1732,11 @@ msgstr ""
 msgid "Problem getting data folder"
 msgstr ""
 
-#: debug/Uploader.java:209
+#: ../../../../../arduino-core/src/cc/arduino/packages/Uploader.java:179
 msgid ""
-"Problem uploading to board.  See "
-"http://www.arduino.cc/en/Guide/Troubleshooting#upload for suggestions."
-msgstr "Праблема выгрузкі ў плату. Глядзі http://www.arduino.cc/en/Guide/Troubleshooting#upload для вырашэння."
+"Problem uploading to board.  See https://support.arduino.cc/hc/en-us/"
+"sections/360003198300 for suggestions."
+msgstr ""
 
 #: Sketch.java:355 Sketch.java:362 Sketch.java:373
 msgid "Problem with rename"
@@ -1680,9 +1779,9 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: ../../../cc/arduino/contributions/libraries/LibraryInstaller.java:157
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibraryInstaller.java:142
 #, java-format
-msgid "Removing library: {0}"
+msgid "Removing library: {0}:{1}"
 msgstr ""
 
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:266
@@ -1717,6 +1816,10 @@ msgstr "Замяніць на:"
 
 #: ../../../../../arduino-core/src/processing/app/I18n.java:28
 msgid "Retired"
+msgstr ""
+
+#: ../../../../../app/src/processing/app/Editor.java:1973
+msgid "Retry the upload with another serial port?"
 msgstr ""
 
 #: Preferences.java:113
@@ -1766,6 +1869,10 @@ msgstr "Захоўваць пры праверцы ці выгрузцы"
 #: Editor.java:2270 Editor.java:2308
 msgid "Saving..."
 msgstr "Захоўваем..."
+
+#: ../../../../../app/src/cc/arduino/contributions/ui/InstallerJDialog.java:136
+msgid "Search Filter"
+msgstr ""
 
 #: ../../../processing/app/FindReplace.java:131
 msgid "Search all Sketch Tabs"
@@ -1833,7 +1940,7 @@ msgstr ""
 
 #: ../../../../../app/src/processing/app/Editor.java:2516
 msgid "Serial monitor not available while plotter is open"
-msgstr ""
+msgstr "Serial-манітор недаступны, калі адкрыты плотар"
 
 #: Serial.java:194
 #, java-format
@@ -1842,12 +1949,15 @@ msgid ""
 " Serial Port menu?"
 msgstr "Паслядоўны порт ''{0}'' не знойдзены. Ці выбралі вы патрэбны ў меню \"Інструменты\" > Serial Port ?"
 
-#: Editor.java:2343
+#: ../../../../../app/src/processing/app/Editor.java:1969
+#: ../../../../../app/src/processing/app/Editor.java:2040
+msgid "Serial port not selected."
+msgstr ""
+
+#: ../../../../../app/src/processing/app/Editor.java:1971
 #, java-format
-msgid ""
-"Serial port {0} not found.\n"
-"Retry the upload with another serial port?"
-msgstr "Serial-порт {0} ня знойдзены.\nПаспрабаваць выгрузку праз іншы порт?"
+msgid "Serial port {0} not found."
+msgstr ""
 
 #: ../../../../../app/src/processing/app/Editor.java:65
 msgid "Serial ports"
@@ -1869,6 +1979,10 @@ msgstr ""
 #: Editor.java:641
 msgid "Show Sketch Folder"
 msgstr "Паказаць Каталог Скетчаў"
+
+#: ../../../../../app/src/processing/app/AbstractTextMonitor.java:101
+msgid "Show timestamp"
+msgstr ""
 
 #: Preferences.java:387
 msgid "Show verbose output during: "
@@ -1902,11 +2016,11 @@ msgstr "Скетч Безымянны"
 msgid "Sketch is read-only"
 msgstr "Скетч Толькі-для-Чытання"
 
-#: Sketch.java:1653
+#: ../../../../../arduino-core/src/cc/arduino/Compiler.java:104
 msgid ""
-"Sketch too big; see http://www.arduino.cc/en/Guide/Troubleshooting#size for "
-"tips on reducing it."
-msgstr "Скетч занадта вялікі; глядзі http://www.arduino.cc/en/Guide/Troubleshooting#size для вырашэння праблемы"
+"Sketch too big; see https://support.arduino.cc/hc/en-us/"
+"articles/360013825179 for tips on reducing it."
+msgstr ""
 
 #: ../../../processing/app/Sketch.java:1639
 #, java-format
@@ -2041,6 +2155,14 @@ msgid ""
 "Create this folder, move the file, and continue?"
 msgstr "Файл\"{0}\" павінен быць унутры каталога\nскетчу з імём \"{1}\". Стварыць такі каталог, \nперамясціць файл, и працягнуць?"
 
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:180
+#, java-format
+msgid ""
+"The library \"{0}\" cannot be used.\n"
+"Library folder names must start with a letter or number, followed by letters,\n"
+"numbers, dashes, dots and underscores. Maximum length is 63 characters."
+msgstr ""
+
 #: Base.java:1054 Base.java:2674
 #, java-format
 msgid ""
@@ -2048,6 +2170,13 @@ msgid ""
 "Library names must contain only basic letters and numbers.\n"
 "(ASCII only and no spaces, and it cannot start with a number)"
 msgstr "Бібліятэку \"{0}\" немагчыма выкарыстаць.\nІмя бібліятэкі павінна зкладацца толькі з літар і лічбаў.\n(толькі ASCII і без прабелаў, нельга пачынаць з лічбы)"
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:115
+#, java-format
+msgid ""
+"The library {0} needs some other library<br />dependencies currently not "
+"installed:"
+msgstr ""
 
 #: ../../../../../app/src/processing/app/SketchController.java:170
 msgid "The main file cannot use an extension"
@@ -2086,12 +2215,12 @@ msgid ""
 "but anything besides the code will be lost."
 msgstr "Папка скетчу знікла.\nСпрабуем перазахаваць у тым жа месцы,\nале ўсё акрамя коду будзе страчана."
 
-#: ../../../processing/app/Sketch.java:2028
+#: ../../../../../app/src/processing/app/SketchController.java:849
 msgid ""
-"The sketch name had to be modified. Sketch names can only consist\n"
-"of ASCII characters and numbers (but cannot start with a number).\n"
-"They should also be less than 64 characters long."
-msgstr "Імя скетча мусіць быць зменена. Імя павінна змяшчаць толькі ASCII-сімвалы і лічбы (але не можа пачынацца з лічбы).\nТаксама не можа быць даўжэй за 64 сімвалы."
+"The sketch name had to be modified.\n"
+"Sketch names must start with a letter or number, followed by letters,\n"
+"numbers, dashes, dots and underscores. Maximum length is 63 characters."
+msgstr ""
 
 #: Base.java:259
 msgid ""
@@ -2108,11 +2237,15 @@ msgid ""
 "Please choose a different folder for your sketchbook."
 msgstr ""
 
+#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:311
+msgid "Theme: "
+msgstr ""
+
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:257
 msgid ""
 "This library is not listed on Library Manager. You won't be able to reinstall it from here.\n"
 "Are you sure you want to delete it?"
-msgstr ""
+msgstr "Гэтая бібліятэка не прысутнічае ў Кіраўніка бібліятэкамі. Вы не зможаце пераўсталяваць яе адсюль.\nВы ўпэўнены, што хочаце выдаліць яе?"
 
 #: ../../../../../app/src/processing/app/EditorStatus.java:349
 msgid ""
@@ -2196,7 +2329,7 @@ msgstr "Немагчыма адчыніць serial-манітор"
 
 #: ../../../../../app/src/processing/app/Editor.java:2709
 msgid "Unable to open serial plotter"
-msgstr ""
+msgstr "Немагчыма адкрыць serial-плотар"
 
 #: ../../../../../app/src/cc/arduino/contributions/libraries/ui/LibraryManagerUI.java:94
 #: ../../../../../app/src/cc/arduino/contributions/packages/ui/ContributionManagerUI.java:89
@@ -2241,19 +2374,15 @@ msgstr "Ёсць абнаўленне"
 msgid "Update"
 msgstr "Абнавіць"
 
-#: Preferences.java:428
-msgid "Update sketch files to new extension on save (.pde -> .ino)"
-msgstr "Аднавіць пашырэнні імён скетчаў падчас захоўвання (*.pde->*.ino)"
-
 #: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:88
 #, java-format
 msgid "Updates available for some of your {0}boards{1}"
-msgstr ""
+msgstr "Даступныя абнаўленні для некаторых вашых {0}плат{1}"
 
 #: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:90
 #, java-format
 msgid "Updates available for some of your {0}boards{1} and {2}libraries{3}"
-msgstr ""
+msgstr "Даступныя абнаўленні для некаторых вашых {0}плат{1} і {2}бібліятэк{3}"
 
 #: ../../../../../app/src/cc/arduino/contributions/ContributionsSelfCheck.java:86
 #, java-format
@@ -2296,6 +2425,10 @@ msgstr "Выгружаем..."
 msgid "Use Selection For Find"
 msgstr ""
 
+#: ../../../../../app/src/cc/arduino/view/preferences/Preferences.java:285
+msgid "Use accessibility features"
+msgstr ""
+
 #: Preferences.java:409
 msgid "Use external editor"
 msgstr "Карыстацца вонкавым рэдактарам"
@@ -2330,7 +2463,7 @@ msgstr "Спаўдзіць код пасля выгрузкі"
 
 #: ../../../../../app/src/processing/app/Editor.java:725
 msgid "Verify/Compile"
-msgstr "Правевыць/Кампіляваць"
+msgstr "Праверыць/кампіляваць"
 
 #: ../../../../../app/src/processing/app/Base.java:451
 msgid "Verifying and uploading..."
@@ -2436,6 +2569,10 @@ msgstr "Wire.receive() была перайменавана ў Wire.read()."
 #: debug/Compiler.java:438
 msgid "Wire.send() has been renamed Wire.write()."
 msgstr "Wire.send() была перайменавана ў Wire.write()."
+
+#: ../../../../../app/src/cc/arduino/contributions/libraries/ui/MultiLibraryInstallDialog.java:128
+msgid "Would you like to install also all the missing dependencies?"
+msgstr ""
 
 #: FindReplace.java:105
 msgid "Wrap Around"
@@ -2579,18 +2716,6 @@ msgstr "кампіляцыі"
 msgid "connected!"
 msgstr "злучана!"
 
-#: ../../../../../app/src/processing/app/Editor.java:1352
-msgid "http://www.arduino.cc/"
-msgstr "http://www.arduino.cc/"
-
-#: UpdateCheck.java:118
-msgid "http://www.arduino.cc/en/Main/Software"
-msgstr "http://www.arduino.cc/en/Main/Software"
-
-#: UpdateCheck.java:53
-msgid "http://www.arduino.cc/latest.txt"
-msgstr "http://www.arduino.cc/latest.txt"
-
 #: Preferences.java:625
 #, java-format
 msgid "ignoring invalid font size {0}"
@@ -2599,6 +2724,12 @@ msgstr "ігнарую памылковы памер шрыфта {0}"
 #: Editor.java:936 Editor.java:943
 msgid "name is null"
 msgstr "імя - null"
+
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:217
+#: ../../../../../arduino-core/src/cc/arduino/contributions/libraries/LibrariesIndexer.java:227
+#, java-format
+msgid "no headers files (.h) found in {0}"
+msgstr ""
 
 #: Editor.java:932
 msgid "serialMenu is null"
@@ -2627,12 +2758,6 @@ msgstr "версія <b>{0}</b>"
 #: ../../../../../app/src/processing/app/Editor.java:2243
 #, java-format
 msgid "{0} - {1} | Arduino {2}"
-msgstr ""
-
-#: ../../../cc/arduino/contributions/SignatureVerificationFailedException.java:39
-#: ../../../cc/arduino/contributions/SignatureVerificationFailedException.java:43
-#, java-format
-msgid "{0} file signature verification failed"
 msgstr ""
 
 #: ../../../cc/arduino/contributions/packages/ContributionInstaller.java:310
@@ -2687,11 +2812,6 @@ msgid ""
 "\"package:arch:board:options\""
 msgstr "{0}: Няправільнае імя платы, мае быць форма \"package:arch:board\" ці  \"package:arch:board:options\""
 
-#: ../../../processing/app/Base.java:509
-#, java-format
-msgid "{0}: Invalid option for \"{1}\" option for board \"{2}\""
-msgstr "{0}: Няправільная опцыя для  \"{1}\" опцыі для платы  \"{2}\""
-
 #: ../../../processing/app/Base.java:507
 #, java-format
 msgid "{0}: Invalid option for board \"{1}\""
@@ -2701,6 +2821,11 @@ msgstr "{0}: Няправільная опцыя для платы \"{1}\""
 #, java-format
 msgid "{0}: Invalid option, should be of the form \"name=value\""
 msgstr "{0}: Няправільная опцыя, мае быць форма \"name=value\""
+
+#: ../../../../../arduino-core/src/processing/app/helpers/CommandlineParser.java:268
+#, java-format
+msgid "{0}: Invalid value for option \"{1}\" for board \"{2}\""
+msgstr ""
 
 #: ../../../processing/app/Base.java:486
 #, java-format
